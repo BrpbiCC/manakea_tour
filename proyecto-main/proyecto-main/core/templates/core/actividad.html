@@ -137,9 +137,9 @@
                             <p>Explora la majestuosidad del Cajón del Maipo de una manera única: a caballo.</p>
                             {% if user.is_authenticated %}
                             {# IMPORTANTE: Asegúrate de que tu vista 'agregar_a_carrito' esté configurada para estos IDs #}
-                            <a href="{% url 'carrito'   %}" class="btn btn-success">Reservar</a>
+                            <a href="{% url 'carrito'   %}" class="btn btn-success d-block mx-auto"  style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;">Reservar</a> {# Asume un ID para este servicio #}
                         {% else %}
-                            <button type="button" class="btn btn-primary"
+                            <button type="button" class="btn btn-primary d-block mx-auto" style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;"
                                     data-bs-toggle="popover" data-bs-placement="left"
                                     data-bs-title="Advertencia"
                                     data-bs-content="Necesitas estar registrado para poder acceder al carrito de compras y poder reservar!!">
@@ -154,9 +154,9 @@
                             <h5 class="card-title">RAFTING</h5>
                             <p>Navega por rápidos desafiantes y disfruta la fuerza del río en una experiencia grupal inolvidable.</p>
                             {% if user.is_authenticated %}
-                            <a href="{% url 'carrito'   %}" class="btn btn-success">Reservar</a>
+                            <a href="{% url 'carrito'   %}" class="btn btn-success d-block mx-auto"  style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;">Reservar</a> {# Asume un ID para este servicio #}
                         {% else %}
-                            <button type="button" class="btn btn-primary"
+                            <button type="button" class="btn btn-primary d-block mx-auto" style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;"
                                     data-bs-toggle="popover" data-bs-placement="left"
                                     data-bs-title="Advertencia"
                                     data-bs-content="Necesitas estar registrado para poder acceder al carrito de compras y poder reservar!!">
@@ -171,9 +171,9 @@
                             <h5 class="card-title">CANOPY</h5>
                             <p>Vuela entre los árboles y contempla la naturaleza desde lo alto con pura emoción y libertad.</p>
                             {% if user.is_authenticated %}
-                            <a href="{% url 'carrito'   %}" class="btn btn-success">Reservar</a>
+                            <a href="{% url 'carrito'   %}" class="btn btn-success d-block mx-auto"  style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;">Reservar</a> {# Asume un ID para este servicio #}
                         {% else %}
-                            <button type="button" class="btn btn-primary"
+                            <button type="button" class="btn btn-primary d-block mx-auto" style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;"
                                     data-bs-toggle="popover" data-bs-placement="left"
                                     data-bs-title="Advertencia"
                                     data-bs-content="Necesitas estar registrado para poder acceder al carrito de compras y poder reservar!!">
@@ -193,9 +193,9 @@
                             <h5 class="card-title">TREKKING</h5>
                             <p>Recorre senderos únicos, conecta con la montaña y disfruta de paisajes que te quitarán el aliento.</p>
                             {% if user.is_authenticated %}
-                            <a href="{% url 'carrito'   %}" class="btn btn-success">Reservar</a>
+                            <a href="{% url 'carrito'   %}" class="btn btn-success d-block mx-auto"  style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;">Reservar</a> {# Asume un ID para este servicio #}
                         {% else %}
-                            <button type="button" class="btn btn-primary"
+                            <button type="button" class="btn btn-primary d-block mx-auto" style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;"
                                     data-bs-toggle="popover" data-bs-placement="left"
                                     data-bs-title="Advertencia"
                                     data-bs-content="Necesitas estar registrado para poder acceder al carrito de compras y poder reservar!!">
@@ -210,9 +210,9 @@
                             <h5 class="card-title">MURO DE ESCALADA</h5>
                             <p>Desafía la gravedad en un entorno seguro y entretenido, ideal para todas las edades.</p>
                             {% if user.is_authenticated %}
-                            <a href="{% url 'carrito'   %}" class="btn btn-success">Reservar</a>
+                            <a href="{% url 'carrito'   %}" class="btn btn-success d-block mx-auto"  style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;">Reservar</a> {# Asume un ID para este servicio #}
                         {% else %}
-                            <button type="button" class="btn btn-primary"
+                            <button type="button" class="btn btn-primary d-block mx-auto" style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;"
                                     data-bs-toggle="popover" data-bs-placement="left"
                                     data-bs-title="Advertencia"
                                     data-bs-content="Necesitas estar registrado para poder acceder al carrito de compras y poder reservar!!">
@@ -227,9 +227,9 @@
                             <h5 class="card-title">CUERDAS ALTAS</h5>
                             <p>Pon a prueba tu equilibrio y destreza en circuitos elevados entre árboles y plataformas.</p>
                             {% if user.is_authenticated %}
-                            <a href="{% url 'carrito'  %}" class="btn btn-success">Reservar</a>
+                            <a href="{% url 'carrito'  %}" class="btn btn-success d-block mx-auto"  style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;">Reservar</a> {# Asume un ID para este servicio #}
                         {% else %}
-                            <button type="button" class="btn btn-primary"
+                            <button type="button" class="btn btn-primary d-block mx-auto" style="padding: 0.4rem 0.8rem; width: fit-content; font-size: 0.85rem;"
                                     data-bs-toggle="popover" data-bs-placement="left"
                                     data-bs-title="Advertencia"
                                     data-bs-content="Necesitas estar registrado para poder acceder al carrito de compras y poder reservar!!">
