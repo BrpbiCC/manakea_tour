@@ -15,7 +15,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 100vh; /* Asegura que la sección ocupe al menos la altura de la ventana */
     display: flex; /* Habilita Flexbox dentro de esta sección */
     flex-direction: column; /* Organiza sus hijos (navbar, contenido, footer) en columna */
     flex-grow: 1; /* Permite que esta sección se expanda para llenar el espacio disponible */

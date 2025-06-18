@@ -12,43 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="{% static 'css/carrito.css'%}"> 
 
-    <style>
-        .table-responsive {
-            margin-top: 20px;
-        }
-        .status-badge {
-            padding: .35em .65em;
-            border-radius: .375rem;
-            font-size: 0.75em;
-            font-weight: bold;
-        }
-        /* Clases de estado dinámicas. Asegúrate que estos nombres coincidan con los de tu BD. */
-        .status-pendiente { background-color: #ffc107; color: #343a40; } /* Amarillo */
-        .status-aceptada { background-color: #28a745; color: white; } /* Verde */
-        .status-cancelada { background-color: #dc3545; color: white; } /* Rojo */
-        .status-completada { background-color: #007bff; color: white; } /* Azul */
-        .status-rechazada { background-color: #6c757d; color: white; } /* Gris oscuro */
-    </style>
 </head>
 <body>
-
-<div id="carrito-desplegable" class="carrito-desplegable">
-    <div class="carrito-contenido">
-        <h3>Tu Carrito</h3>
-        <div id="items-carrito">
-            <p>El carrito está vacío.</p>
-        </div>
-        <div class="carrito-total">
-            <strong>Total: $<span id="total-carrito">0</span></strong>
-        </div>
-        <a href="{% url 'carrito' %}" class="btn btn-success btn-block">Ir al Carrito Completo</a>
-    </div>
-</div>
 
 <section class="bg" id="main-content">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="{% url 'inicio'%}">MANAKEA TOURS</a>
+            <a class="navbar-brand fw-bold" href="{% url 'inicioregistrado'%}">MANAKEA TOURS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -74,11 +44,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'perfil' %}">PERFIL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link carrito-trigger" href="#">
-                                <i class="bi bi-cart"></i>
-                            </a>
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link btn btn-outline-danger btn-sm ms-2" href="{% url 'logout' %}">
